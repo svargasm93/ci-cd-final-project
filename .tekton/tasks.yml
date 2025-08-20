@@ -20,11 +20,6 @@ spec:
       script: |
         #!/usr/bin/env sh
         set -eu
-        python -m pip install --upgrade pip
-        pip install flake8
-
-        # Now, the flake8 command will be found
-        flake8 $(params.args)
         echo "Removing all files from ${WORKSPACE_SOURCE_PATH} ..."
         # Delete any existing contents of the directory if it exists.
         #
